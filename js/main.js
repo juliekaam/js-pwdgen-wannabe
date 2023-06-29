@@ -12,14 +12,9 @@ let surname= prompt("Qual'è il tuo cognome?");
 let favoriteColor= prompt("Qual'è il tuo colore preferito?");
 const number=21;
 
-let password=`  la tua password è:
-   ${nome}
-   ${surname}
-   ${favoriteColor}
-   ${number}
+let password=( nome+surname+favoriteColor+number) ;
+   
 
-   `
+// stampo informazione la password a console
 
-// stampo informazione richiesti a console
-
-console.log(password);
+console.log("la tua password è: " +password);
